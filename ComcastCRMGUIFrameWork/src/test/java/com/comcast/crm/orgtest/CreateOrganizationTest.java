@@ -22,7 +22,7 @@ public class CreateOrganizationTest extends BaseClass {
 	public void createOrgTest() throws EncryptedDocumentException, IOException {
 
 		// creating a random number
-		//test
+		//test1
 		JavaUtility ju = new JavaUtility();
 		int random = ju.getRandomNum();
 
