@@ -46,7 +46,7 @@ public class CreateContactTest extends BaseClass {
 		Reporter.log("verify in createContact");
 	}
 
-	@Test(groups = "regression")
+	@Test(groups = {"resionalregresssion", "regression"})
 	public void createConatctWithIntigrationTest() throws EncryptedDocumentException, IOException {
 
 		// calling random number
