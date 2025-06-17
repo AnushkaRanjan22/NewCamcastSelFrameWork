@@ -5,12 +5,13 @@
     <classes>
       <class name="com.comcast.crm.contacttest.CreateContactTest">
         <methods>
+          <include name="createContactwithDateTest"/>
           <include name="lunchTheBrowser"/>
           <include name="closeTheBrowser"/>
+          <include name="createContactTest"/>
           <include name="loginToCrm"/>
           <include name="configAfterSuit"/>
           <include name="configBeforSuit"/>
-          <include name="createConatctWithIntigrationTest"/>
           <include name="logoutToCrm"/>
         </methods>
       </class> <!-- com.comcast.crm.contacttest.CreateContactTest -->

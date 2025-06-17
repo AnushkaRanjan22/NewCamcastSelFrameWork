@@ -39,7 +39,7 @@ public class HomePage {
 	@FindBy(linkText = "Email")
 	private WebElement emailLink;
 	
-	@FindBy(xpath = "//a[text()='Sign Out']")
+	@FindBy(xpath = "//a[contains(text(),'Sign Out')]")
 	private WebElement signout;
 	
 	@FindBy(xpath = "//td[@class='small']/img[@src='themes/softed/images/user.PNG']")
@@ -95,7 +95,7 @@ public class HomePage {
 	
 	public void logoutFromCrm() throws Throwable {
 	WebDriverUtility wdu= new WebDriverUtility();
-	Thread.sleep(2000);
+	Thread.sleep(3000);
 	wdu.mouseoverOnElement(driver, adminitatorIcon);
 	signout.click();
 	

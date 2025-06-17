@@ -42,17 +42,19 @@ public class BaseClass {
 	public WebDriver driver = null;
 	public static WebDriver sdriver = null;
 
-	@BeforeSuite(groups = { "st", "rt" })
+	@BeforeSuite(groups = { "smoke", "regression" })
 	public void configBeforSuit() {
 		System.out.println("---connect database----");
 	}
 
 //	@Parameters("browser")
-	@BeforeClass()
+	@BeforeClass(groups = { "smoke", "regression" })
 	public void lunchTheBrowser() throws IOException {
-		UtilityClassObject.getTest().log(Status.INFO, "blowser lunched");
-		String Browser = flib.getDataFromProperties("browser");
-		String url = flib.getDataFromProperties("url");
+		// UtilityClassObject.getTest().log(Status.INFO, "blowser lunched");
+		// String Browser = flib.getDataFromProperties("browser");
+		String Browser = System.getProperty("browser", flib.getDataFromProperties("browser"));
+		// String url = flib.getDataFromProperties("url");
+		String url = System.getProperty("url", flib.getDataFromProperties("url"));
 		if (Browser.equals("chrome"))
 			driver = new ChromeDriver();
 		else if (Browser.equals("firefox"))
@@ -71,41 +73,44 @@ public class BaseClass {
 		// test.log(Status.INFO,"browser launched");
 	}
 
-	@BeforeMethod(groups = { "st", "rt" })
+	@BeforeMethod(groups = { "smoke", "regression" })
 	public void loginToCrm() throws IOException {
 		// fatch data from properties file
-		UtilityClassObject.getTest().log(Status.INFO, "login");
-		String username = flib.getDataFromProperties("userName");
-		String password = flib.getDataFromProperties("password");
+		// UtilityClassObject.getTest().log(Status.INFO, "login");
+		//String username = flib.getDataFromProperties("userName");
+		//String password = flib.getDataFromProperties("password");
+		
+		String username=System.getProperty("username",flib.getDataFromProperties("userName"));
+		String password=System.getProperty("password",flib.getDataFromProperties("password"));
 
 		// login to crm
 		WelcomePage wp = new WelcomePage(driver);
 		wp.loginInCrm(username, password);
-		//test.log(Status.INFO, "Login to app");
+		// test.log(Status.INFO, "Login to app");
 	}
 
-	@AfterMethod(groups = { "st", "rt" })
+	@AfterMethod(groups = { "smoke", "regression" })
 	public void logoutToCrm() throws Throwable {
 		// get the signout
 		UtilityClassObject.getTest().log(Status.INFO, "logout");
 		HomePage hp = new HomePage(driver);
 		hp.logoutFromCrm();
-	//	test.log(Status.INFO, "Logout from app");
+		// test.log(Status.INFO, "Logout from app");
 
 	}
 
-	@AfterClass(groups = { "st", "rt" })
+	@AfterClass(groups = { "smoke", "regression" })
 	public void closeTheBrowser() {
 		UtilityClassObject.getTest().log(Status.INFO, "close the browser");
 		driver.quit();
-		//test.log(Status.INFO, "close the browser");
+		// test.log(Status.INFO, "close the browser");
 
 	}
 
-	@AfterSuite(groups = { "st", "rt" })
+	@AfterSuite(groups = { "smoke", "regression" })
 	public void configAfterSuit() {
 		UtilityClassObject.getTest().log(Status.INFO, "close database connection");
-		//test.log(Status.INFO, "---Disconnect DB----");
+		// test.log(Status.INFO, "---Disconnect DB----");
 	}
 
 }

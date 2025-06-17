@@ -18,7 +18,7 @@ import com.concast.crm.ObjectRepository.OrganizationsPage;
 import com.crm.comcast.generic.baseUtility.BaseClass;
 
 public class CreateOrganizationTest extends BaseClass {
-	@Test
+	@Test(groups = {"functional","regression"})
 	public void createOrgTest() throws EncryptedDocumentException, IOException {
 
 		// creating a random number
@@ -64,7 +64,7 @@ public class CreateOrganizationTest extends BaseClass {
 
 	}
 
-	@Test
+	@Test(groups = "regression")
 	public void createOrgIndustTest() throws EncryptedDocumentException, IOException {
 
 		JavaUtility ju = new JavaUtility();
@@ -128,7 +128,7 @@ public class CreateOrganizationTest extends BaseClass {
 
 	}
 
-	@Test
+	@Test(groups = "regression")
 	public void createOrgWithPhoneTest() throws EncryptedDocumentException, IOException {
 		JavaUtility ju = new JavaUtility();
 		// creating a random number

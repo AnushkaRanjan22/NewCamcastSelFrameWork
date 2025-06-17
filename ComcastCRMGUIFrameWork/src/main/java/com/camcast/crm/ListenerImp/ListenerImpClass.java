@@ -74,14 +74,12 @@ public class ListenerImpClass implements ITestListener, ISuiteListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
 		ITestListener.super.onTestSkipped(result);
 		System.out.println("test skipped");
 	}
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
 		ITestListener.super.onTestStart(result);
 		test = reporter.createTest(result.getMethod().getMethodName());
 		UtilityClassObject.setTest(test);
@@ -90,7 +88,6 @@ public class ListenerImpClass implements ITestListener, ISuiteListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
 		ITestListener.super.onTestSuccess(result);
 		test.log(Status.INFO, "test pass");
 	}

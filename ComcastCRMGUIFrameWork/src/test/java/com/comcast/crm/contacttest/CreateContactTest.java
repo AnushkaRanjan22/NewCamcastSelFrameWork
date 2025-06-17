@@ -20,7 +20,7 @@ import com.crm.comcast.generic.baseUtility.BaseClass;
 
 public class CreateContactTest extends BaseClass {
 	
-	@Test
+	@Test(groups = "regression")
 	public void createContactTest() throws EncryptedDocumentException, IOException {
 
 		// calling random number
@@ -46,7 +46,7 @@ public class CreateContactTest extends BaseClass {
 		Reporter.log("verify in createContact");
 	}
 
-	@Test
+	@Test(groups = "regression")
 	public void createConatctWithIntigrationTest() throws EncryptedDocumentException, IOException {
 
 		// calling random number
@@ -105,7 +105,7 @@ public class CreateContactTest extends BaseClass {
 		Assert.assertEquals(true, HearderOrg1);
 	}
 
-	@Test
+	@Test(groups = "regression")
 	public void createContactwithDateTest() throws Throwable {
 
 		// creating a random number
