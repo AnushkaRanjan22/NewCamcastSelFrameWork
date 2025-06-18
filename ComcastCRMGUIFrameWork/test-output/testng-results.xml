@@ -1,65 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2025-06-17T13:33:10 IST" name="Default suite" finished-at="2025-06-17T13:33:48 IST" duration-ms="38666">
-    <groups>
-    </groups>
-    <test started-at="2025-06-17T13:33:10 IST" name="Default test" finished-at="2025-06-17T13:33:48 IST" duration-ms="38666">
-      <class name="com.comcast.crm.orgtest.CreateOrganizationTest">
-        <test-method is-config="true" signature="configBeforSuit()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:10 IST" name="configBeforSuit" finished-at="2025-06-17T13:33:10 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforSuit -->
-        <test-method is-config="true" signature="lunchTheBrowser()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:10 IST" name="lunchTheBrowser" finished-at="2025-06-17T13:33:14 IST" duration-ms="4559" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lunchTheBrowser -->
-        <test-method is-config="true" signature="loginToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:14 IST" name="loginToCrm" finished-at="2025-06-17T13:33:17 IST" duration-ms="3072" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToCrm -->
-        <test-method signature="createOrgIndustTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:17 IST" name="createOrgIndustTest" finished-at="2025-06-17T13:33:24 IST" duration-ms="6212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrgIndustTest -->
-        <test-method is-config="true" signature="logoutToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:24 IST" name="logoutToCrm" finished-at="2025-06-17T13:33:28 IST" duration-ms="4126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutToCrm -->
-        <test-method is-config="true" signature="loginToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:28 IST" name="loginToCrm" finished-at="2025-06-17T13:33:29 IST" duration-ms="1616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToCrm -->
-        <test-method signature="createOrgTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:29 IST" name="createOrgTest" finished-at="2025-06-17T13:33:34 IST" duration-ms="4757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrgTest -->
-        <test-method is-config="true" signature="logoutToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:34 IST" name="logoutToCrm" finished-at="2025-06-17T13:33:38 IST" duration-ms="3975" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutToCrm -->
-        <test-method is-config="true" signature="loginToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:38 IST" name="loginToCrm" finished-at="2025-06-17T13:33:39 IST" duration-ms="1321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToCrm -->
-        <test-method signature="createOrgWithPhoneTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:39 IST" name="createOrgWithPhoneTest" finished-at="2025-06-17T13:33:44 IST" duration-ms="4690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrgWithPhoneTest -->
-        <test-method is-config="true" signature="logoutToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:44 IST" name="logoutToCrm" finished-at="2025-06-17T13:33:48 IST" duration-ms="3941" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutToCrm -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:48 IST" name="closeTheBrowser" finished-at="2025-06-17T13:33:48 IST" duration-ms="320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="configAfterSuit()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]" started-at="2025-06-17T13:33:48 IST" name="configAfterSuit" finished-at="2025-06-17T13:33:48 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterSuit -->
-      </class> <!-- com.comcast.crm.orgtest.CreateOrganizationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+<testng-results ignored="0" total="3" passed="3"
+	failed="0" skipped="0">
+	<reporter-output>
+	</reporter-output>
+	<suite started-at="2025-06-17T13:33:10 IST" name="Default suite"
+		finished-at="2025-06-17T13:33:48 IST" duration-ms="38666">
+		<groups>
+		</groups>
+		<test started-at="2025-06-17T13:33:10 IST" name="Default test"
+			finished-at="2025-06-17T13:33:48 IST" duration-ms="38666">
+			<class name="com.comcast.crm.orgtest.CreateOrganizationTest">
+				<test-method is-config="true"
+					signature="configBeforSuit()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:10 IST" name="configBeforSuit"
+					finished-at="2025-06-17T13:33:10 IST" duration-ms="14"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- configBeforSuit -->
+				<test-method is-config="true"
+					signature="lunchTheBrowser()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:10 IST" name="lunchTheBrowser"
+					finished-at="2025-06-17T13:33:14 IST" duration-ms="4559"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- lunchTheBrowser -->
+				<test-method is-config="true"
+					signature="loginToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:14 IST" name="loginToCrm"
+					finished-at="2025-06-17T13:33:17 IST" duration-ms="3072"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- loginToCrm -->
+				<test-method
+					signature="createOrgIndustTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:17 IST" name="createOrgIndustTest"
+					finished-at="2025-06-17T13:33:24 IST" duration-ms="6212"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- createOrgIndustTest -->
+				<test-method is-config="true"
+					signature="logoutToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:24 IST" name="logoutToCrm"
+					finished-at="2025-06-17T13:33:28 IST" duration-ms="4126"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- logoutToCrm -->
+				<test-method is-config="true"
+					signature="loginToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:28 IST" name="loginToCrm"
+					finished-at="2025-06-17T13:33:29 IST" duration-ms="1616"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- loginToCrm -->
+				<test-method
+					signature="createOrgTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:29 IST" name="createOrgTest"
+					finished-at="2025-06-17T13:33:34 IST" duration-ms="4757"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- createOrgTest -->
+				<test-method is-config="true"
+					signature="logoutToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:34 IST" name="logoutToCrm"
+					finished-at="2025-06-17T13:33:38 IST" duration-ms="3975"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- logoutToCrm -->
+				<test-method is-config="true"
+					signature="loginToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:38 IST" name="loginToCrm"
+					finished-at="2025-06-17T13:33:39 IST" duration-ms="1321"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- loginToCrm -->
+				<test-method
+					signature="createOrgWithPhoneTest()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:39 IST" name="createOrgWithPhoneTest"
+					finished-at="2025-06-17T13:33:44 IST" duration-ms="4690"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- createOrgWithPhoneTest -->
+				<test-method is-config="true"
+					signature="logoutToCrm()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:44 IST" name="logoutToCrm"
+					finished-at="2025-06-17T13:33:48 IST" duration-ms="3941"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- logoutToCrm -->
+				<test-method is-config="true"
+					signature="closeTheBrowser()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:48 IST" name="closeTheBrowser"
+					finished-at="2025-06-17T13:33:48 IST" duration-ms="320"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- closeTheBrowser -->
+				<test-method is-config="true"
+					signature="configAfterSuit()[pri:0, instance:com.comcast.crm.orgtest.CreateOrganizationTest@b3ca52e]"
+					started-at="2025-06-17T13:33:48 IST" name="configAfterSuit"
+					finished-at="2025-06-17T13:33:48 IST" duration-ms="0" status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- configAfterSuit -->
+			</class> <!-- com.comcast.crm.orgtest.CreateOrganizationTest -->
+		</test> <!-- Default test -->
+	</suite> <!-- Default suite -->
 </testng-results>

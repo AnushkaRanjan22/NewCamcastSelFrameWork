@@ -3,7 +3,8 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.comcast.crm.contacttest.CreateContactWithorgNameIntragtionTest">
+			<class
+				name="com.comcast.crm.contacttest.CreateContactWithorgNameIntragtionTest">
 				<methods>
 					<include name="createConatctWithIntigration"></include>
 				</methods>

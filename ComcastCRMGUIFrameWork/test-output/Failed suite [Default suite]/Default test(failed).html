@@ -1,12 +1,17 @@
 <html>
 <head>
-<title>TestNG:  Default test(failed)</title>
+<title>TestNG: Default test(failed)</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
-.log { display: none;} 
-.stack-trace { display: none;} 
+.log {
+	display: none;
+}
+
+.stack-trace {
+	display: none;
+}
 </style>
 <script type="text/javascript">
 <!--
@@ -53,35 +58,58 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test(failed)</h2><table border='1' align="center">
-<tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/5</td>
-</tr><tr>
-<td>Started on:</td><td>Wed May 28 10:43:30 IST 2025</td>
-</tr>
-<tr><td>Total time:</td><td>36 seconds (36084 ms)</td>
-</tr><tr>
-<td>Included groups:</td><td></td>
-</tr><tr>
-<td>Excluded groups:</td><td></td>
-</tr>
-</table><p/>
-<small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test class: PracticeForListener.PracticeListener</td>
-<td><div><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+	<h2 align='center'>Default test(failed)</h2>
+	<table border='1' align="center">
+		<tr>
+			<td>Tests passed/Failed/Skipped:</td>
+			<td>0/1/5</td>
+		</tr>
+		<tr>
+			<td>Started on:</td>
+			<td>Wed May 28 10:43:30 IST 2025</td>
+		</tr>
+		<tr>
+			<td>Total time:</td>
+			<td>36 seconds (36084 ms)</td>
+		</tr>
+		<tr>
+			<td>Included groups:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Excluded groups:</td>
+			<td></td>
+		</tr>
+	</table>
+	<p />
+	<small><i>(Hover the method name to see the test class
+			name)</i></small>
+	<p />
+	<table width='100%' border='1' class='invocation-failed'>
+		<tr>
+			<td colspan='4' align='center'><b>FAILED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td><b>Attribute(s)</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test
+				class: PracticeForListener.PracticeListener</td>
+			<td><div>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at PracticeForListener.PracticeListener.CreateTest1(PracticeListener.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace435175610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace435175610'><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+... Removed 31 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace435175610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace435175610'>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -115,25 +143,38 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>PracticeForListener.PracticeListener@3d285d7e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test class: PracticeForListener.PracticeListener</td>
-<td><div><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+</pre>
+				</div></td>
+			<td>0</td>
+			<td>PracticeForListener.PracticeListener@3d285d7e</td>
+		</tr>
+	</table>
+	<p>
+	<table width='100%' border='1' class='invocation-skipped'>
+		<tr>
+			<td colspan='4' align='center'><b>SKIPPED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td><b>Attribute(s)</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test
+				class: PracticeForListener.PracticeListener</td>
+			<td><div>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at PracticeForListener.PracticeListener.CreateTest1(PracticeListener.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace558404860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace558404860'><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+... Removed 31 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace558404860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace558404860'>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -167,16 +208,25 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>PracticeForListener.PracticeListener@3d285d7e</td></tr>
-<tr>
-<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test class: PracticeForListener.PracticeListener</td>
-<td><div><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+</pre>
+				</div></td>
+			<td>0</td>
+			<td>PracticeForListener.PracticeListener@3d285d7e</td>
+		</tr>
+		<tr>
+			<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test
+				class: PracticeForListener.PracticeListener</td>
+			<td><div>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at PracticeForListener.PracticeListener.CreateTest1(PracticeListener.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace701724503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace701724503'><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+... Removed 31 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace701724503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace701724503'>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -210,16 +260,25 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>PracticeForListener.PracticeListener@3d285d7e</td></tr>
-<tr>
-<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test class: PracticeForListener.PracticeListener</td>
-<td><div><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+</pre>
+				</div></td>
+			<td>0</td>
+			<td>PracticeForListener.PracticeListener@3d285d7e</td>
+		</tr>
+		<tr>
+			<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test
+				class: PracticeForListener.PracticeListener</td>
+			<td><div>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at PracticeForListener.PracticeListener.CreateTest1(PracticeListener.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1721576219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1721576219'><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+... Removed 31 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace1721576219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1721576219'>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -253,16 +312,25 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>PracticeForListener.PracticeListener@3d285d7e</td></tr>
-<tr>
-<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test class: PracticeForListener.PracticeListener</td>
-<td><div><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+</pre>
+				</div></td>
+			<td>0</td>
+			<td>PracticeForListener.PracticeListener@3d285d7e</td>
+		</tr>
+		<tr>
+			<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test
+				class: PracticeForListener.PracticeListener</td>
+			<td><div>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at PracticeForListener.PracticeListener.CreateTest1(PracticeListener.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1103132232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1103132232'><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+... Removed 31 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace1103132232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1103132232'>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -296,16 +364,25 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>PracticeForListener.PracticeListener@3d285d7e</td></tr>
-<tr>
-<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test class: PracticeForListener.PracticeListener</td>
-<td><div><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+</pre>
+				</div></td>
+			<td>0</td>
+			<td>PracticeForListener.PracticeListener@3d285d7e</td>
+		</tr>
+		<tr>
+			<td title='PracticeForListener.PracticeListener.CreateTest1()'><b>CreateTest1</b><br>Test
+				class: PracticeForListener.PracticeListener</td>
+			<td><div>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at PracticeForListener.PracticeListener.CreateTest1(PracticeListener.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace423711439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace423711439'><pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
+... Removed 31 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace423711439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace423711439'>
+					<pre>java.lang.AssertionError: expected [Home] but found [Admin123@ Administrator1 - Home - vtiger CRM 5 - Commercial Open Source CRM]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -339,9 +416,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>PracticeForListener.PracticeListener@3d285d7e</td></tr>
-</table><p>
+</pre>
+				</div></td>
+			<td>0</td>
+			<td>PracticeForListener.PracticeListener@3d285d7e</td>
+		</tr>
+	</table>
+	<p>
 </body>
 </html>

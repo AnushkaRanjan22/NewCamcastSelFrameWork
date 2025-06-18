@@ -1,5 +1,6 @@
 package com.concast.crm.ObjectRepository;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,7 +40,7 @@ public class HomePage {
 	@FindBy(linkText = "Email")
 	private WebElement emailLink;
 	
-	@FindBy(xpath = "//a[contains(text(),'Sign Out')]")
+	@FindBy(xpath = "//a[text()='Sign Out']")
 	private WebElement signout;
 	
 	@FindBy(xpath = "//td[@class='small']/img[@src='themes/softed/images/user.PNG']")
@@ -95,10 +96,15 @@ public class HomePage {
 	
 	public void logoutFromCrm() throws Throwable {
 	WebDriverUtility wdu= new WebDriverUtility();
-	Thread.sleep(3000);
-	wdu.mouseoverOnElement(driver, adminitatorIcon);
-	signout.click();
-	
+//	Thread.sleep(1000);
+	try {
+		wdu.mouseoverOnElement(driver, adminitatorIcon);
+		signout.click();
+	}
+	catch(Exception e) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click()", signout);
+	}
 		
 	}
 	

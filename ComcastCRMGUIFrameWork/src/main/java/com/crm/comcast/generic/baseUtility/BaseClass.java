@@ -42,13 +42,13 @@ public class BaseClass {
 	public WebDriver driver = null;
 	public static WebDriver sdriver = null;
 
-	@BeforeSuite(groups = { "smoke", "regression" })
+	@BeforeSuite(groups = { "ST", "RT" })
 	public void configBeforSuit() {
 		System.out.println("---connect database----");
 	}
 
 //	@Parameters("browser")
-	@BeforeClass(groups = { "smoke", "regression" })
+	@BeforeClass(groups = { "ST", "RT" })
 	public void lunchTheBrowser() throws IOException {
 		// UtilityClassObject.getTest().log(Status.INFO, "blowser lunched");
 		// String Browser = flib.getDataFromProperties("browser");
@@ -73,7 +73,7 @@ public class BaseClass {
 		// test.log(Status.INFO,"browser launched");
 	}
 
-	@BeforeMethod(groups = { "smoke", "regression" })
+	@BeforeMethod(groups = { "ST", "RT" })
 	public void loginToCrm() throws IOException {
 		// fatch data from properties file
 		// UtilityClassObject.getTest().log(Status.INFO, "login");
@@ -89,7 +89,7 @@ public class BaseClass {
 		// test.log(Status.INFO, "Login to app");
 	}
 
-	@AfterMethod(groups = { "smoke", "regression" })
+	@AfterMethod(groups = { "ST", "RT" })
 	public void logoutToCrm() throws Throwable {
 		// get the signout
 		UtilityClassObject.getTest().log(Status.INFO, "logout");
@@ -99,7 +99,7 @@ public class BaseClass {
 
 	}
 
-	@AfterClass(groups = { "smoke", "regression" })
+	@AfterClass(groups = { "ST", "RT" })
 	public void closeTheBrowser() {
 		UtilityClassObject.getTest().log(Status.INFO, "close the browser");
 		driver.quit();
@@ -107,7 +107,7 @@ public class BaseClass {
 
 	}
 
-	@AfterSuite(groups = { "smoke", "regression" })
+	@AfterSuite(groups = { "ST", "RT" })
 	public void configAfterSuit() {
 		UtilityClassObject.getTest().log(Status.INFO, "close database connection");
 		// test.log(Status.INFO, "---Disconnect DB----");
